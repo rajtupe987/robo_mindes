@@ -21,7 +21,7 @@ app.use(express.json());
 
 app.get("/", (req, res) => {
   try {
-    res.send("welcome ti chat view");
+    res.send({ "ok": true, "msg": "Welcome to chatview" });
   } catch (error) {
     res.send({ "ok": false, "msg": error.message })
   }
