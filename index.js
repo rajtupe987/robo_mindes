@@ -8,7 +8,6 @@ require("dotenv").config();
 const app = express();
 
 
-
 app.use(cors());
 // app.use(
 //   cors({
@@ -22,7 +21,7 @@ app.use(express.json());
 
 app.get("/", (req, res) => {
   try {
-    res.send({ "ok": true, "msg": "Welcome to chatview" });
+    res.send("welcome ti chat view");
   } catch (error) {
     res.send({ "ok": false, "msg": error.message })
   }
